@@ -25,11 +25,11 @@ def run_command(command):
     return rc
 
 def clone_a_repo():
-    cmd = 'git clone https://github.com/NUROISEA/stable-diffusion-webui.git'
+    cmd = '"git" clone https://github.com/NUROISEA/stable-diffusion-webui.git'
     run_command(cmd)
     print("Done cloning")
 
 def download_large_file():
-    cmd = 'wget https://huggingface.co/Linaqruf/anything-v3.0/resolve/main/Anything-V3.0.ckpt'
+    cmd = '"wget" https://huggingface.co/Linaqruf/anything-v3.0/resolve/main/Anything-V3.0.ckpt'
     run_command(cmd)
     print("Done downloading")
