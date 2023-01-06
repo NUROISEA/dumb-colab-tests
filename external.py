@@ -15,14 +15,15 @@ def fetch_repo_readme():
 # https://www.endpointdev.com/blog/2015/01/getting-realtime-output-using-python/
 def run_command(command):
     process = subprocess.Popen(shlex.split(command), stdout=subprocess.PIPE)
-    while True:
-        output = process.stdout.readline()
-        if output == '' and process.poll() is not None:
-            break
-        if output:
-            print(output.strip())
-    rc = process.poll()
-    return rc
+    # does not print anything
+    # while True:
+    #     output = process.stdout.readline()
+    #     if output == '' and process.poll() is not None:
+    #         break
+    #     if output:
+    #         print(output.strip())
+    # rc = process.poll()
+    # return rc
 
 def clone_a_repo():
     cmd = '"git" clone https://github.com/NUROISEA/stable-diffusion-webui.git'
