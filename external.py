@@ -1,10 +1,12 @@
+import os
+
 hello_world = "Hello world, from an external python script!"
 
-
-
 def fetch_repo_license():
-    !wget https://github.com/NUROISEA/dumb-colab-tests/raw/main/LICENSE -O LICENSE
+    #!wget https://github.com/NUROISEA/dumb-colab-tests/raw/main/LICENSE -O LICENSE
+    os.system('wget https://github.com/NUROISEA/dumb-colab-tests/raw/main/LICENSE -O LICENSE')
 
 def fetch_repo_readme():
-    !wget https://github.com/NUROISEA/dumb-colab-tests/raw/main/README.md -O README.md
+    #!wget https://github.com/NUROISEA/dumb-colab-tests/raw/main/README.md -O README.md
+    os.system('wget https://github.com/NUROISEA/dumb-colab-tests/raw/main/README.md -O README.md')
 
