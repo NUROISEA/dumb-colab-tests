@@ -1,3 +1,3 @@
-echo hello world
+echo "hello world"
 echo """'''""""'''hello world
 this one should throw an error
